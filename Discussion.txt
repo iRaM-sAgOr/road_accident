@@ -1,0 +1,17 @@
+1. We have used two different approach for this  dataset. KNN and SVM
+2. in the first approach we have used SVM classifier. Here we have 21 rows of data. We consider first 20 rows except crash Id as our features. And
+the severity is our target. When we go deep down the dataset we can see that there are only three classes to be predicted. But the amount of data 
+is not properly distributed, not even near. class one is too low to find F1 value during model training. Also for the class two. class three has a huge amount of data in the data set. 
+3. we split the data with 80:20 for train:test
+4. we have used gridsearch technique for training and we used linear, rbf and poly kernel with different combination of C and gamma values. 
+5. We have found the gridsearch accuracy is 97% and also using the best model for prediction with test set ,we also find 97% accuracy. And the perfect combination is kernel='rbf',C=1,gamma=.001.
+6. We have used PCA for finding the most impacted features to reduce the dimension. But we have found that using 19 features all 19 PC's contains significant amount of information. Mostly first 15 PC contains almost 95% information of our data. So we didn't reduce the dimension. If we do reduction we may loss some information. 
+7. And even if we use the 15 PC's and test the model with the test set, we find 97% accuracy. so there is not much improvement even if we reduce the dimension.
+......................................🤶️
+
+1. In second process we use KNN
+2. we have used different k from 1 to 9 and fin the best accuracy for k=7 and 9 .accuracy is 0.9647844565877353
+3. for cross validation we have used LOOCV and find the best accuracy constant for every k. accuracy is here 0.9681093394077449(improved)
+4. And if we do 20 iteration for any k value and calculate the average accuracy , we find the best accuracy is for k =7 and accuracy is 0.9678202792956894(not improved from loocv but improved than the one iteration
+
+NB: These are the concept to share actually. And one thing vaia, is it possible to give my name as the contributor in the paper? Because i need some paper..Only if possible.

@@ -1,0 +1,101 @@
+##considering only the train data........................................................
+1. SVC(kernel='rbf',C=1,gamma=.001) 
+'Date',
+ 'Day of Week',
+ 'Time',
+ 'Lane Count',
+ 'Crash Type',
+ 'Functional Class',
+ 'Speed Limit',
+ 'Environmental Conditions',
+ 'Light Conditions',
+ 'Surface Condition'
+
+2. SVC(kernel='linear',C=1)
+ 'Date',
+ 'Day of Week',
+ 'Time',
+ 'Lane Count',
+ 'Crash Type',
+ 'Environmental Conditions',
+ 'Light Conditions',
+ 'Surface Condition',
+ 'Drugged Driver Involved',
+ 'Traffic Controls Present'
+
+3. SVC(kernel='poly',C=1,gamma=.001)
+'Date',
+ 'Day of Week',
+ 'Time',
+ 'Lane Count',
+ 'Crash Type',
+ 'Functional Class',
+ 'Speed Limit',
+ 'Environmental Conditions',
+ 'Light Conditions',
+ 'Surface Condition'
+4.KNeighborsClassifier(n_neighbors=4)
+'Date',
+ 'Time',
+ 'Lane Count',
+ 'Environmental Conditions',
+ 'Light Conditions',
+ 'Curve Related',
+ 'Alcohol Involved',
+ 'Distracted Driving Involved',
+ 'Drugged Driver Involved',
+ 'Temp Traffic Control Zone'
+
+5. And tree based feature selection:
+photo te ace
+
+###considerig the total data.....................................
+1.KNeighborsClassifier(n_neighbors=5)
+'Date',
+ 'Day of Week',
+ 'Time',
+ 'Crash Type',
+ 'Functional Class',
+ 'Speed Limit',
+ 'Total Vehicles Involved',
+ 'Alcohol Involved',
+ 'Distracted Driving Involved',
+ 'Vehicle Type'
+
+2.SVC(kernel='poly',C=1,gamma=.001)
+'Date',
+ 'Day of Week',
+ 'Time',
+ 'Lane Count',
+ 'Crash Type',
+ 'Functional Class',
+ 'Speed Limit',
+ 'Environmental Conditions',
+ 'Light Conditions',
+ 'Surface Condition'
+
+3. SVC(kernel='rbf',C=1,gamma=.001)
+'Date',
+ 'Day of Week',
+ 'Time',
+ 'Lane Count',
+ 'Crash Type',
+ 'Functional Class',
+ 'Speed Limit',
+ 'Environmental Conditions',
+ 'Light Conditions',
+ 'Surface Condition'
+4. SVC(kernel='linear',C=1)
+'Date',
+ 'Day of Week',
+ 'Time',
+ 'Lane Count',
+ 'Crash Type',
+ 'Functional Class',
+ 'Speed Limit',
+ 'Environmental Conditions',
+ 'Light Conditions',
+ 'Surface Condition'
+5. tree based model:
+photo two...
+
